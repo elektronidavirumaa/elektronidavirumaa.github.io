@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Шапка сайта */
@@ -40,21 +41,33 @@ h2 {
     text-align: center;
     color: #4CAF50;
     font-size: 2em;
+    margin-bottom: 20px;
 }
 
 p, li {
     font-size: 1.1em;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 /* Список */
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 ul li {
     padding: 10px 0;
+}
+
+/* Ссылки */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Подвал */
