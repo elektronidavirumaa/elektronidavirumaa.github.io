@@ -11,7 +11,7 @@
     <!-- Шапка сайта -->
     <header>
         <h1>Садовый кооператив "Электрон"</h1>
-        <p>Садовый кооператив &quot;Электрон&quot; существует с 30 апреля 1974года</p>
+        <p>Садовый кооператив &quot;Электрон&quot; существует с 30 апреля 1974 года</p>
     </header>
 
     <!-- Новости -->
@@ -44,7 +44,6 @@
         </ul>
     </section>
 
-
     <!-- Банковские реквизиты -->
     <section id="bank">
         <h2>Банковские реквизиты</h2>
@@ -54,13 +53,29 @@
         </ul>
     </section>
 
-
-
+    <!-- Электроэнергия -->
+    <section id="electricity">
+        <h2>Таблица электроэнергии</h2>
+        <input type="text" id="searchInput" placeholder="Поиск по дому..." />
+        <table id="electricityTable">
+            <thead>
+                <tr>
+                    <th>Elektri</th>
+                    <th id="sortEnergy">Энергия /кВт/ч &#x25B2;&#x25BC;</th>
+                    <th>Площадь</th>
+                </tr>
+            </thead>            
+            <tbody>
+                <!-- Таблица будет заполнена с помощью JavaScript -->
+            </tbody>
+        </table>
+    </section>
 
     <!-- Подвал -->
     <footer>
         <p>&copy; 2024 Садовый кооператив "Электрон"</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

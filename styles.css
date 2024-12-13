@@ -78,3 +78,37 @@ footer {
     padding: 20px;
     margin-top: 20px;
 }
+
+/* Таблица электроэнергии */
+#electricity table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#electricity th, #electricity td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+#electricity th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#electricity tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#electricity tr:hover {
+    background-color: #f1f1f1;
+}
+
+#electricity input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
