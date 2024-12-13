@@ -95,6 +95,8 @@ footer {
 #electricity th {
     background-color: #4CAF50;
     color: white;
+    cursor: pointer;
+    user-select: none;
 }
 
 #electricity tr:nth-child(even) {

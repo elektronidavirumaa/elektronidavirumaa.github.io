@@ -77,6 +77,23 @@ function searchTable() {
     createTable(filteredData);
 }
 
+// Функция для сортировки по энергии
+let sortDirection = true; // true - по возрастанию, false - по убыванию
+
+function sortTable() {
+    const sortedData = data.slice(); // Создаем копию массива
+
+    sortedData.sort((a, b) => {
+        // Обработка пустых значений и нечисловых данных
+        const energyA = typeof a.energy === 'number' ? a.energy : parseFloat(a.energy) || 0;
+        const energyB = typeof b.energy === 'number' ? b.energy : parseFloat(b.energy) || 0;
+        return sortDirection ? energyA - energyB : energyB - energyA;
+    });
+
+    sortDirection = !sortDirection; // Меняем направление сортировки
+    createTable(sortedData);
+}
+
 // Инициализация таблицы при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
     createTable(data);
@@ -84,4 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Добавить обработчик события для поиска
     const searchInput = document.getElementById('searchInput');
     searchInput.addEventListener('input', searchTable);
+
+    // Добавить обработчик события для сортировки
+    const sortEnergyHeader = document.getElementById('sortEnergy');
+    sortEnergyHeader.addEventListener('click', sortTable);
 });
